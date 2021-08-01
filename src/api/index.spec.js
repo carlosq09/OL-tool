@@ -2,22 +2,14 @@ import { expect } from '@jest/globals'
 import Api from '.'
 
 describe('Api', () => {
-    let email, password, name
 
     describe('users', () => {
-        beforeEach(() => {
-            name = `name-${Math.random()}`,
-                surname = `appsurname-${Math.random()}`,
-                email = 'eve.holt@reqres.in',
-                password = 'pistol'
-        })
 
         describe('oompa loompa list', () => {
             it('should retrieve full list per page', async () => {
                 try {
                     const res = await Api.getOompaLoompaList()
                     expect(res).toBeDefined()
-                    expect(res.data).toBeDefined()
                     expect(res).toHaveProperty('current')
 
                 } catch (error) {
@@ -29,9 +21,7 @@ describe('Api', () => {
                 try {
                     const res = await Api.getOompaLoompaList()
                     expect(res).toBeDefined()
-                    expect(res.data).toBeDefined()
                     expect(res).toHaveProperty('current')
-                    
                     expect(res.current).toEqual(1)
 
                 } catch (error) {
@@ -53,11 +43,11 @@ describe('Api', () => {
 
             it('should fail if provided ID is not a number', async () => {
                 try {
-                    await Api.register(email, password, 'notRepeatedPassword')
+                    await Api.getOompaLoompaDetails('notANumber')
                     throw Error('should not reach here')
                 } catch (error) {
                     expect(error).toBeDefined()
-                    expect(error.message).toEqual('Passwords fields dont match')
+                    expect(error.message).toEqual('Given id is not valid')
                 }
             })
         })
