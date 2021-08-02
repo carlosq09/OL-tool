@@ -1,0 +1,15 @@
+.pagination {
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    &__item {
+        text-align: center;
+        color: black;
+        float: left;
+        cursor: pointer;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+}
