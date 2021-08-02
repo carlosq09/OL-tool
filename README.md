@@ -30,7 +30,7 @@ Users can:
 ## Aplication Description
 The aplication initializes (and is the default page in not declared routes) in the first page of the oompa loompa list, in there you can go to the details of any oompa loompa displayed, or navigate to other pages, or filter using the search bar
 
-NOTE: the application api wrapper was tested using Jest performing TDD (see further in commits)
+NOTE: the application api wrapper was tested using Jest performing TDD (see further in develop commits)
 
 ### Landing
 ![Login](/doc/images/landing.png)
