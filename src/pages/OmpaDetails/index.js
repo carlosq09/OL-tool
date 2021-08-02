@@ -28,7 +28,9 @@ function OmpaDetails({ history }) {
 
 
     return <div className="OompaDetails" key={`${item.first_name}`}>
-        <img src={item.image} />
+        <div className="OompaDetails__image-container">
+            <img className="OompaDetails__image" src={item.image} />
+        </div>
         <div className="OompaDetails__content">
             <div className="OompaDetails__name">{item.first_name} - {item.last_name}</div>
             <div className="OompaDetails__gender">{item.gender === 'F' ? 'Woman' : 'Man'}</div>

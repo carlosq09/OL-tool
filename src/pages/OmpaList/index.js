@@ -55,7 +55,7 @@ function OmpaList({ history }) {
                 />) : <div>Loading...</div>
             }
         </div>
-        <Pagination number={totalPages} url="/oompa-loompas?page=" />
+        {currentItems?.length > 0 && <Pagination number={totalPages} url="/oompa-loompas?page=" />}
     </div >
 }
 

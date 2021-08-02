@@ -1,3 +1,53 @@
+## OLT Oompa-tool
+[![react version](https://img.shields.io/badge/react-17.0.2-blue.svg)](https://www.npmjs.com/package/react/v/17.0.2) 
+[![react version](https://img.shields.io/badge/reactrouter-5.2.0-blue.svg)](https://www.npmjs.com/package/react/v/5.2.0) 
+[![react version](https://img.shields.io/badge/SASS-6.0.1-purple.svg)](https://www.npmjs.com/package/react/v/6.0.1)
+
+<p align="center">
+
+<img src="https://media.giphy.com/media/xIna8nqTTk3x6/giphy.gif" >
+
+## Introduction
+
+This application was made with React, using some provided API's to make an Oompa loompa crew manager, users can navigate through pages to see the list of employees, click an Oompa loompa to see the details (such like gender, profession, etc), filter using the search bar, and navigate via URL's
+
+## [Deployed Live demo](https://oltool.surge.sh/)
+
+deployed live demo using surge.sh
+
+## Functional Description
+Users can:
+
+* See full paginated Oompa loompa list
+
+* Click on details
+
+* Navigate through diferent pages using the pagination element (via url also)
+
+* Everything above from mobile as well
+
+
+## Aplication Description
+The aplication initializes (and is the default page in not declared routes) in the first page of the oompa loompa list, in there you can go to the details of any oompa loompa displayed, or navigate to other pages, or filter using the search bar
+
+NOTE: the application api wrapper was tested using Jest performing TDD (see further in commits)
+
+### Landing
+![Login](/doc/images/landing.png)
+
+### Filter
+![Login](/doc/images/filter.png)
+
+### Pagination
+![Login](/doc/images/pagination.png)
+
+### Details
+![Login](/doc/images/pagination.png)
+
+### *RESPONSIVE*
+![Login](/doc/images/responsive.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
